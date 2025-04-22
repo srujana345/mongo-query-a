@@ -21,3 +21,8 @@ db.employees.aggregate([
     {$unwind:"$skills"}
 
 ]);
+db.employees.aggregate([
+
+    {$project:{_id:0,name:1,department:1,salaryStr:{$convert:{input:"$salary",to:"int"}}}},
+    {$group:{_id:'$department', total:{$sum:"$salaryStr"}}},
+   ]);

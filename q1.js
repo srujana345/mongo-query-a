@@ -2,5 +2,5 @@
 // show dbs;
 // use mydb;
 // show collections;
-// db.createCollection("products")
+// db.createCollection("students")
 // show collections;

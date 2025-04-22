@@ -26,7 +26,7 @@ db.authors.insertOne({
 db.posts.insertOne({
   title: "This is title 1",
   desc: "Description of title 1",
-  authorId: ObjectId("68071837d8fa1ba1dd08f8bb"),
+  authorId: ObjectId("68073080df34d14fd6b5f89a"),
 });
 
 //display all the posts
