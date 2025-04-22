@@ -1,0 +1,20 @@
+db.createCollection("Cars")
+db.Cars.updateMany([
+    {name:"m1"},
+    {name:"m2"},
+    {name:"m3"},
+    {name:"m4"},
+    {name:"m5"},
+]);
+db.Cars.updateMany(
+    {},
+    {$set:{price:10000}}
+)
+db.Cars.updateMany(
+    {},
+    {$set:{variant:['v1','v2','v3','v4']}}
+)
+db.Cars.UpdateOne(
+    {name:m3},
+    {$push:{}}
+)
